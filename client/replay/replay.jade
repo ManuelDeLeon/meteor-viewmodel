@@ -1,0 +1,29 @@
+
+template(name='replay')
+  #accordion2.accordion
+    .accordion-group
+      .accordion-heading
+        a.accordion-toggle.collapsed(data-toggle='collapse', data-parent='#accordion2', href='#collapseOne')
+          | Controls
+      #collapseOne.accordion-body.collapse
+        .accordion-inner
+          #controls
+            button#record.btn(data-bind='click: record, disable: recording') Record
+            button#stop.btn(data-bind='click: stop') Stop
+            button#play.btn(data-bind='click: play') Play
+            button#reset.btn(data-bind='click: reset') Reset
+          a.guide.pull-left(href='#', data-bind='click: prev') Previous
+          #h-slider.pull-left
+          a.guide.pull-left(href='#', data-bind='click: next') Next
+      br
+  #replay
+    form
+      fieldset
+        .controls.controls-row
+          label Tell us something:
+          textarea#textInput(rows='3', data-bind="value: aboutYou, valueUpdate: 'afterkeydown'")
+        .controls.controls-row
+          label Colors:
+          .colorPreview(data-bind='style: { background: color1 }, click: randomizeColor1')
+          .colorPreview(data-bind='style: { background: color2 }, click: randomizeColor2')
+          .colorPreview(data-bind='style: { background: color3 }, click: randomizeColor3')

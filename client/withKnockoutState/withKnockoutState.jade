@@ -1,0 +1,10 @@
+template(name='withKnockoutState')
+  #form
+    | First Name:
+    input(type='text', data-bind="value: firstName, valueUpdate: 'input'")
+    br
+    | Last Name:
+    input(type='text', data-bind="value: lastName, valueUpdate: 'input'")
+
+    div(data-bind="text: 'Hello to ' + fullName()")
+    button.btn.btn-primary(data-bind='enable: hasFirstAndLast') Enter Site

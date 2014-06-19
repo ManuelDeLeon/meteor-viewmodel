@@ -1,0 +1,10 @@
+template(name='prototype')
+
+  | First Name:
+  input#inputFirst(type='text', data-bind="value: first")
+  br
+  | Last Name:
+  input#inputLast(type='text', data-bind="value: last")
+
+  div Hello {{fullName}}
+  button.btn.btn-primary(disabled='{{enterDisabled}}') Enter Site

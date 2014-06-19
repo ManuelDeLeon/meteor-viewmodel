@@ -1,0 +1,9 @@
+template(name='withSessions')
+  | First Name:
+  input#inputFirst(type='text', value='{{firstName}}')
+  br
+  | Last Name:
+  input#inputLast(type='text', value='{{lastName}}')
+
+  div Hello {{fullName}}
+  button.btn.btn-primary(disabled='{{enterDisabled}}') Enter Site

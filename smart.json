@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "iron-router": {},
+    "jade": {},
+    "mocha-web": {},
+    "jquery-ui-bootstrap": {}
+  }
+}
