@@ -1,8 +1,8 @@
-.meteor/local
-.git
-.build
-packages
-c
-meteor-viewmodel.iml
-.idea
-smart.lock
+/.meteor/local
+/.git
+/.build
+/packages
+/c
+/meteor-viewmodel.iml
+/.idea
+/smart.lock
